@@ -10,15 +10,15 @@
 
   <title>wen yen</title>
 
-  <!-- Bootstrap core CSS -->
+  <!-- Bootstrap -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom fonts for this template -->
+  <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-  <!-- Custom styles for this template -->
+  <!-- resume -->
   <link href="css/resume.css" rel="stylesheet">
 
   <style>
@@ -75,10 +75,10 @@
           <p></p>
           <p>TAIWAN/Taipei</p>
           <p>0922871932</p>
-          <a href="">vvin5318@gmail.com</a>
+          <p>vvin5318@gmail.com</p>
         </div>
         <p class="lead mb-5">
-          <!-- intro -->
+        <!-- intro -->
           
         </p>
         <div class="social-icons">
@@ -88,8 +88,13 @@
           <a href="https://github.com/vvin55318">
             <i class="fab fa-github"></i>
           </a>
-          <!-- <i href="#"><i class="fab fa-twitter"></i></a> -->
-          <!-- <i href="#"><i class="fab fa-facebook-f"></i></a> -->
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-instagram"></i>
+          </a>
+          
         </div>
       </div>
     </section>
@@ -105,10 +110,7 @@
           <div class="resume-content">
             <h3 class="mb-0">實踐大學</h3>
             <div class="subheading mb-3">食品營養與保健生計學系</div>
-            <p>
-
-
-            </p>
+            <p></p>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">
@@ -119,12 +121,9 @@
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
             <h3 class="mb-0">泰山職訓中心</h3>
-            <div class="subheading mb-3">
-              前端網頁技術班
-              </div>
+            <div class="subheading mb-3">前端網頁技術班</div>
             <p>
               為期三個半月的職前訓練課程，在其中學習了HTML、CSS、Javascript、JQuery、Boostrap、vue.js等前端技術，以及PHP、MySQL等候端技術，並且會使用Photoshop和Illustrator等設計軟體。
-
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -163,7 +162,7 @@
           </li>
         </ul>
 
-        <div class="subheading mb-3">前端</div>
+        <div class="subheading mb-3">後端</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <img src="images/php.svg" alt="" style="width:64px;height:64px">
@@ -241,15 +240,30 @@
     <hr class="m-0">
 
 <!-- section contact -->
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="interests">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-start flex-column" id="interests">
       <div class="w-100">
         <h2 class="mb-5">聯絡我</h2>
-        <p>
-
-        </p>
-        <p class="mb-0">
-
-        </p>
+        <!-- form -->
+        <form>
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" class="form-control" id="name" style="width:30%">
+          </div>
+          <div class="form-group">
+            <label for="email">信箱</label>
+            <input type="email" class="form-control" id="email" style="width:75%">
+          </div>
+          <div class="form-group">
+            <label for="msg">留言</label>
+            <textarea class="form-control" id="msg" rows="8" style="width:75%"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mr-4">送出</button>
+          <button type="reset" class="btn btn-secondary mr-4">重新輸入</button>
+        </form>
+      </div>
+      <!-- copyright -->
+      <div class="align-self-start mt-auto">
+        <p class="h6"  id="copyright"></p>
       </div>
     </section>
   </div>
@@ -263,6 +277,12 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+  
+  <!-- date -->
+  <script>
+    var tyear=new Date().getFullYear()
+    $("#copyright")[0].textContent=`Copyright © ${tyear} Wen Yen`
+  </script>
 
 </body>
 
