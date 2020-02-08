@@ -21,6 +21,9 @@
   <!-- resume -->
   <link href="css/resume.css" rel="stylesheet">
 
+  <!-- mystyle -->
+  <link rel="stylesheet" href="css/mystyle.css">
+
   <style>
     p{
       margin:0px;
@@ -83,16 +86,16 @@
         </p>
         <div class="social-icons">
           <a href="https://www.linkedin.com/in/%E6%96%87%E7%A1%AF-%E8%AC%9D-1065771a1/">
-            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-linkedin-in" title="Linkedin"></i>
           </a>
           <a href="https://github.com/vvin55318">
-            <i class="fab fa-github"></i>
+            <i class="fab fa-github" title="GitHub"></i>
           </a>
           <a href="#">
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-facebook-f" title="Facebook"></i>
           </a>
           <a href="#">
-            <i class="fab fa-instagram"></i>
+            <i class="fab fa-instagram" title="Instagram"></i>
           </a>
           
         </div>
@@ -123,7 +126,7 @@
             <h3 class="mb-0">泰山職訓中心</h3>
             <div class="subheading mb-3">前端網頁技術班</div>
             <p>
-              為期三個半月的職前訓練課程，在其中學習了HTML、CSS、Javascript、JQuery、Boostrap、vue.js等前端技術，以及PHP、MySQL等候端技術，並且會使用Photoshop和Illustrator等設計軟體。
+              為期三個半月的職前訓練課程，在其中學習了HTML、CSS、JavaScript、JQuery、Boostrap、Vue.js等前端技術，以及PHP、MySQL等候端技術，並且會使用Photoshop和Illustrator等設計軟體。
             </p>
           </div>
           <div class="resume-date text-md-right">
@@ -143,42 +146,42 @@
         <div class="subheading mb-3">前端</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-              <img src="images/html5.svg" alt="" style="width:64px;height:64px">
+              <img src="images/html5.svg" alt="HTML5" title="HTML5" style="width:64px;height:64px" class="ski_icon">
           </li>
           <li class="list-inline-item">
-            <img src="images/css3.svg" alt="" style="width:64px;height:64px">
+            <img src="images/css3.svg" alt=" CSS3" title="CSS3" style="width:64px;height:64px" class="ski_icon">
           </li>
           <li class="list-inline-item">
-            <img src="images/bootstrap.svg" alt="" style="width:64px;height:64px">
+            <img src="images/bootstrap.svg" alt="Bootstrap" title="Bootstrap" style="width:64px;height:64px" class="ski_icon">
           </li>
           <li class="list-inline-item">
-            <img src="images/javascript.svg" alt="" style="width:64px;height:64px">
+            <img src="images/javascript.svg" alt="JavaScript" title="JavaScript" style="width:64px;height:64px" class="ski_icon">
           </li>
           <li class="list-inline-item">
-            <img src="images/JQuery.png" alt="" style="width:80px;height:80px">
+            <img src="images/JQuery.png" alt="JQuery" title="JQuery" style="width:80px;height:80px" class="ski_icon">
           </li>
           <li class="list-inline-item">
-            <img src="images/vuejs.svg" alt="" style="width:64px;height:64px">
+            <img src="images/vuejs.svg" alt="Vue.js" title="Vue.js" style="width:64px;height:64px" class="ski_icon">
           </li>
         </ul>
 
         <div class="subheading mb-3">後端</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-            <img src="images/php.svg" alt="" style="width:64px;height:64px">
+            <img src="images/php.svg" alt="PHP" title="PHP" style="width:64px;height:64px" class="ski_icon">
           </li>
           <li class="list-inline-item">
-            <img src="images/mysql.svg" alt="" style="width:64px;height:64px">
+            <img src="images/mysql.svg" alt="MySQL" title="MySQL" style="width:64px;height:64px" class="ski_icon">
           </li>
         </ul>
 
         <div class="subheading mb-3">設計</div>
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
-            <img src="images/photoshop.svg" alt="" style="width:64px;height:64px">
+            <img src="images/photoshop.svg" alt="Photoshop" title="Photoshop" style="width:64px;height:64px" class="ski_icon">
           </li>
           <li class="list-inline-item">
-            <img src="images/ai.svg" alt="" style="width:64px;height:64px">
+            <img src="images/ai.svg" alt="Illustrator" title="Illustrator" style="width:64px;height:64px" class="ski_icon">
           </li>
         </ul>
 
@@ -193,44 +196,50 @@
         <h2 class="mb-5">作品集</h2>
         <div class="row">
           <div class="col-sm-3 my-4">
-            <div class="card">
+            <div class="card hidden" >
               <a href="http://220.128.133.15/s1080402/02_JS_StoryGame/">
-                <img src="images/JS_StoryGame.jpg" title="JS_StoryGame" alt="JS_StoryGame" style="width:250px;height:250px">
+                <img src="images/JS_StoryGame.jpg" title="JS_StoryGame" alt="JS_StoryGame" class="pro_ho" id="fa_img_StoryGame">
+                <span class="pro_pop text-center pop_text" id="fa_txt_StoryGame">使用JavaScript以及SweetAlert2套件做的是非題小遊戲。</span>
               </a>
             </div>
           </div>
           <div class="col-sm-3 my-4">
-            <div class="card">
+            <div class="card hidden">
               <a href="http://220.128.133.15/s1080402/03_JS_ColorPicker/">
-                <img src="images/JS_ColorPicker.jpg" title="JS_ColorPicker" alt="JS_ColorPicker" style="width:250px;height:250px">
+                <img src="images/JS_ColorPicker.jpg" title="JS_ColorPicker" alt="JS_ColorPicker" class="pro_ho" id="fa_img_ColorPicker">
+                <span class="pro_pop text-center pop_text" id="fa_txt_ColorPicker">使用JavaScript做出的調色盤，可手動以及隨機改變顏色，並會顯示色碼以供使用。</span>
               </a>
             </div>
           </div>
           <div class="col-sm-3 my-4">
-            <div class="card">
+            <div class="card hidden">
               <a href="http://220.128.133.15/s1080402/04_JS_AnalogClock/">
-                <img src="images/JS_AnalogClock.jpg" title="JS_AnalogClock" alt="JS_AnalogClock" style="width:250px;height:250px">
+                <img src="images/JS_AnalogClock.jpg" title="JS_AnalogClock" alt="JS_AnalogClock" class="pro_ho" id="fa_img_AnalogClock">
+                <span class="pro_pop text-center pop_text" id="fa_txt_AnalogClock">使用JavaScript做出的類比風格時鐘，可正確顯示台灣的時間。</span>
               </a>
             </div>
           </div>
           <div class="col-sm-3 my-4">
-            <div class="card">
+            <div class="card hidden">
               <a href="http://220.128.133.15/s1080402/05_JS_DigitalClock/">
-                <img src="images/JS_DigitalClock.jpg" title="JS_DigitalClock" alt="JS_DigitalClock" style="width:250px;height:250px">
+                <img src="images/JS_DigitalClock.jpg" title="JS_DigitalClock" alt="JS_DigitalClock" class="pro_ho" id="fa_img_DigitalClock">
+                <span class="pro_pop text-center pop_text" id="fa_txt_DigitalClock">使用JavaScript做出的電子風格時鐘，可正確顯示台灣的時間。</span>
               </a>
             </div>
           </div>
           <div class="col-sm-3 my-4">
-            <div class="card">
+            <div class="card hidden">
               <a href="http://220.128.133.15/s1080402/06_JS_OpenAPI/">
-                <img src="images/JS_OpenAPI.jpg" title="JS_OpenAPI" alt="JS_OpenAPI" style="width:250px;height:250px">
+                <img src="images/JS_OpenAPI.jpg" title="JS_OpenAPI" alt="JS_OpenAPI" class="pro_ho" id="fa_img_OpenAPI">
+                <span class="pro_pop text-center pop_text" id="fa_txt_OpenAPI">使用AJAX與台北市政府開放的ubike API資料串接，並使用資料庫，可將常用的ubile站點加入我的最愛。</span>
               </a>
             </div>
           </div>
           <div class="col-sm-3 my-4">
-            <div class="card">
+            <div class="card hidden">
               <a href="http://220.128.133.15/s1080402/San'sLogic/">
-                <img src="images/San'sLogic.jpg" title="San'sLogic" alt="San'sLogic" style="width:250px;height:250px">
+                <img src="images/San'sLogic.jpg" title="San'sLogic" alt="San'sLogic" class="pro_ho" id="fa_img_SansLogic">
+                <span class="pro_pop text-center pop_text" id="fa_txt_SansLogic">使用神邏輯模型公仔的品牌做出的品牌形象網站。</span>
               </a>
             </div>
           </div>
@@ -239,12 +248,12 @@
 
     <hr class="m-0">
 
-<!-- section contact -->
+    <!-- section contact -->
     <section class="resume-section p-3 p-lg-5 d-flex justify-content-start flex-column" id="interests">
       <div class="w-100">
         <h2 class="mb-5">聯絡我</h2>
         <!-- form -->
-        <form>
+        <form action="#">
           <div class="form-group">
             <label for="name">姓名</label>
             <input type="text" class="form-control" id="name" style="width:30%">
@@ -277,12 +286,26 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+
+  <!-- my js -->
+  <script src="js/myjs.js"></script>
   
-  <!-- date -->
+  
   <script>
-    var tyear=new Date().getFullYear()
-    $("#copyright")[0].textContent=`Copyright © ${tyear} Wen Yen`
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   </script>
+
+  
 
 </body>
 
