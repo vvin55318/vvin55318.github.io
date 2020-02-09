@@ -1,3 +1,7 @@
+p{
+    margin:0px;
+}
+
 .ski_icon:hover{
     opacity:50%;
 }
@@ -5,7 +9,6 @@
 .pro_ho{
     width:100%;
     height:250px;
-
 }
 
 .pro_ho:hover{

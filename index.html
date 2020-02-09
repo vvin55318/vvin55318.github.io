@@ -2,34 +2,21 @@
 <html lang="zh">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>wen yen</title>
-
   <!-- Bootstrap -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/bootstrap.css">
   <!-- google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" >
+  <link rel="stylesheet" href="css/all.css">
   <!-- resume -->
-  <link href="css/resume.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="css/resume.css">
   <!-- mystyle -->
   <link rel="stylesheet" href="css/mystyle.css">
-
-  <style>
-    p{
-      margin:0px;
-    }
-  
-  </style>
 </head>
 
 <body id="page-top">
@@ -253,18 +240,18 @@
       <div class="w-100">
         <h2 class="mb-5">聯絡我</h2>
         <!-- form -->
-        <form action="#">
+        <form action="api.php" method="post">
           <div class="form-group">
             <label for="name">姓名</label>
-            <input type="text" class="form-control" id="name" style="width:30%">
+            <input type="text" class="form-control" name="name" id="name" style="width:30%" required>
           </div>
           <div class="form-group">
             <label for="email">信箱</label>
-            <input type="email" class="form-control" id="email" style="width:75%">
+            <input type="email" class="form-control" name="email" id="email" style="width:75%" required>
           </div>
           <div class="form-group">
             <label for="msg">留言</label>
-            <textarea class="form-control" id="msg" rows="8" style="width:75%"></textarea>
+            <textarea class="form-control" id="msg" rows="8" name="message" style="width:75%" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary mr-4">送出</button>
           <button type="reset" class="btn btn-secondary mr-4">重新輸入</button>
@@ -277,36 +264,15 @@
     </section>
   </div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
+  <!-- Bootstrap js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Plugin js -->
+  <script src="js/jquery.easing.min.js"></script>
+  <!-- template js -->
   <script src="js/resume.min.js"></script>
-
   <!-- my js -->
   <script src="js/myjs.js"></script>
-  
-  
-  <script>
-
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  </script>
-
-  
 
 </body>
-
 </html>
