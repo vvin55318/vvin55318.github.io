@@ -55,3 +55,12 @@ $("#fa_img_SansLogic").mouseover(function(){
 $("#fa_img_SansLogic").mouseout(function(){
     $("#fa_txt_SansLogic").css({"display":"none"})
 })
+
+// JS_padController滑入 彈出
+$("#fa_img_padController").mouseover(function(){
+    $("#fa_txt_padController").css({"display":"block"})
+})
+
+$("#fa_img_padController").mouseout(function(){
+    $("#fa_txt_padController").css({"display":"none"})
+})
