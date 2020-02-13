@@ -49,7 +49,7 @@
           <a class="nav-link js-scroll-trigger" href="#profile">作品集</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#contact">聯絡我</a>
+          <a class="nav-link js-scroll-trigger" href="#interests">聯絡我</a>
         </li>
       </ul>
     </div>
@@ -275,12 +275,20 @@
 
     <hr class="m-0">
 
+
+<!-- form alert -->
+<script>
+function conf_msg(){
+  alert("已送出，於短時間內將與您聯繫，謝謝!");
+}
+</script>
+
     <!-- section contact -->
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-start flex-column" id="contact">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-start flex-column" id="interests">
       <div class="w-100">
         <h2 class="mb-5">聯絡我</h2>
         <!-- form -->
-        <form action="http://220.128.133.15/s1080402/profile/api.php" method="post">
+        <form action="http://220.128.133.15/s1080402/profile/api.php" method="post" onsubmit="conf_msg(this)">
           <div class="form-group">
             <label for="name">姓名</label>
             <input type="text" class="form-control" name="name" id="name" style="width:30%" required>
@@ -293,8 +301,10 @@
             <label for="msg">留言</label>
             <textarea class="form-control" id="msg" rows="8" name="message" style="width:75%" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary mr-4">送出</button>
-          <button type="reset" class="btn btn-secondary mr-4">重新輸入</button>
+          <input type="submit" class="btn btn-primary mr-4" value="送出">
+          <!-- <button type="submit" class="btn btn-primary mr-4">送出</button> -->
+          <input type="reset" class="btn btn-secondary mr-4" value="重新輸入">
+          <!-- <button type="reset" class="btn btn-secondary mr-4">重新輸入</button> -->
         </form>
       </div>
       <!-- copyright -->
@@ -313,7 +323,6 @@
   <script src="js/resume.min.js"></script>
   <!-- my js -->
   <script src="js/myjs.js"></script>
-  
 
 </body>
 </html>

@@ -73,7 +73,3 @@ $("#fa_img_WhacAMole").mouseover(function(){
 $("#fa_img_WhacAMole").mouseout(function(){
     $("#fa_txt_WhacAMole").css({"display":"none"})
 })
-
-$.get("http://220.128.133.15/s1080402/profile/api.php",function(re){
-    alert(re);
-})
