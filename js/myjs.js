@@ -64,3 +64,12 @@ $("#fa_img_padController").mouseover(function(){
 $("#fa_img_padController").mouseout(function(){
     $("#fa_txt_padController").css({"display":"none"})
 })
+
+// JS_WhacAMole滑入 彈出
+$("#fa_img_WhacAMole").mouseover(function(){
+    $("#fa_txt_WhacAMole").css({"display":"block"})
+})
+
+$("#fa_img_WhacAMole").mouseout(function(){
+    $("#fa_txt_WhacAMole").css({"display":"none"})
+})
