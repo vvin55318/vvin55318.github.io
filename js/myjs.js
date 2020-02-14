@@ -73,3 +73,12 @@ $("#fa_img_WhacAMole").mouseover(function(){
 $("#fa_img_WhacAMole").mouseout(function(){
     $("#fa_txt_WhacAMole").css({"display":"none"})
 })
+
+// LineWeatherBot滑入 彈出
+$("#fa_img_LineWeatherBot").mouseover(function(){
+    $("#fa_txt_LineWeatherBot").css({"display":"block"})
+})
+
+$("#fa_img_LineWeatherBot").mouseout(function(){
+    $("#fa_txt_LineWeatherBot").css({"display":"none"})
+})
