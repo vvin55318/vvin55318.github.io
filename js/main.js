@@ -82,3 +82,12 @@ $("#fa_img_LineWeatherBot").mouseover(function(){
 $("#fa_img_LineWeatherBot").mouseout(function(){
     $("#fa_txt_LineWeatherBot").css({"display":"none"})
 })
+
+// MaskMap滑入 彈出
+$("#fa_img_MaskMap").mouseover(function(){
+    $("#fa_txt_MaskMap").css({"display":"block"})
+})
+
+$("#fa_img_MaskMap").mouseout(function(){
+    $("#fa_txt_MaskMap").css({"display":"none"})
+})
