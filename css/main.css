@@ -24,14 +24,22 @@ p{
     pointer-events:none;
 }
 
-.pop_text{
-    
+.pop_text{ 
     color:white;
     filter:drop-shadow(1px 1px 1px #000);
 }
 
 .hidden{
     overflow:hidden;
+}
+
+.tag_c{
+    background:#45ADFF;
+    color:#fff;
+    border-radius:10px;
+    padding:0px 5px;
+
+
 }
 
 

@@ -2,92 +2,31 @@
 var tyear=new Date().getFullYear()
 $("#copyright")[0].textContent=`© ${tyear} WenYen`
   
-// JS_StoryGame滑入 彈出
-$("#fa_img_StoryGame").mouseover(function(){
-    $("#fa_txt_StoryGame").css({"display":"block"})
-})
+var f_name=new Array()
+f_name=[
+    "StoryGame",
+    "ColorPicker",
+    "AnalogClock",
+    "DigitalClock",
+    "OpenAPI",
+    "SansLogic",
+    "padController",
+    "WhacAMole",
+    "LineWeatherBot",
+    "MaskMap"
+]
 
-$("#fa_img_StoryGame").mouseout(function(){
-    $("#fa_txt_StoryGame").css({"display":"none"})
-})
+for(i=0;i<f_name.length;i++){
+    loop(f_name[i])
+}
 
-// JS_ColorPicker滑入 彈出
-$("#fa_img_ColorPicker").mouseover(function(){
-    $("#fa_txt_ColorPicker").css({"display":"block"})
-})
+// 滑入 彈出效果
+function loop(name){
+    $("#fa_img_"+name).mouseover(function(){
+        $("#fa_txt_"+name).css({"display":"block"})
+    })
+    $("#fa_img_"+name).mouseout(function(){
+        $("#fa_txt_"+name).css({"display":"none"})
+    })
+}
 
-$("#fa_img_ColorPicker").mouseout(function(){
-    $("#fa_txt_ColorPicker").css({"display":"none"})
-})
-
-// JS_AnalogClock滑入 彈出
-$("#fa_img_AnalogClock").mouseover(function(){
-    $("#fa_txt_AnalogClock").css({"display":"block"})
-})
-
-$("#fa_img_AnalogClock").mouseout(function(){
-    $("#fa_txt_AnalogClock").css({"display":"none"})
-})
-
-// JS_DigitalClock滑入 彈出
-$("#fa_img_DigitalClock").mouseover(function(){
-    $("#fa_txt_DigitalClock").css({"display":"block"})
-})
-
-$("#fa_img_DigitalClock").mouseout(function(){
-    $("#fa_txt_DigitalClock").css({"display":"none"})
-})
-
-// JS_OpenAPI滑入 彈出
-$("#fa_img_OpenAPI").mouseover(function(){
-    $("#fa_txt_OpenAPI").css({"display":"block"})
-})
-
-$("#fa_img_OpenAPI").mouseout(function(){
-    $("#fa_txt_OpenAPI").css({"display":"none"})
-})
-
-// San'sLogic滑入 彈出
-$("#fa_img_SansLogic").mouseover(function(){
-    $("#fa_txt_SansLogic").css({"display":"block"})
-})
-
-$("#fa_img_SansLogic").mouseout(function(){
-    $("#fa_txt_SansLogic").css({"display":"none"})
-})
-
-// JS_padController滑入 彈出
-$("#fa_img_padController").mouseover(function(){
-    $("#fa_txt_padController").css({"display":"block"})
-})
-
-$("#fa_img_padController").mouseout(function(){
-    $("#fa_txt_padController").css({"display":"none"})
-})
-
-// JS_WhacAMole滑入 彈出
-$("#fa_img_WhacAMole").mouseover(function(){
-    $("#fa_txt_WhacAMole").css({"display":"block"})
-})
-
-$("#fa_img_WhacAMole").mouseout(function(){
-    $("#fa_txt_WhacAMole").css({"display":"none"})
-})
-
-// LineWeatherBot滑入 彈出
-$("#fa_img_LineWeatherBot").mouseover(function(){
-    $("#fa_txt_LineWeatherBot").css({"display":"block"})
-})
-
-$("#fa_img_LineWeatherBot").mouseout(function(){
-    $("#fa_txt_LineWeatherBot").css({"display":"none"})
-})
-
-// MaskMap滑入 彈出
-$("#fa_img_MaskMap").mouseover(function(){
-    $("#fa_txt_MaskMap").css({"display":"block"})
-})
-
-$("#fa_img_MaskMap").mouseout(function(){
-    $("#fa_txt_MaskMap").css({"display":"none"})
-})
