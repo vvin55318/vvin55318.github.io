@@ -2,6 +2,7 @@
 var tyear=new Date().getFullYear()
 $("#copyright")[0].textContent=`© ${tyear} WenYen`
   
+// profile name
 var f_name=new Array()
 f_name=[
     "StoryGame",
@@ -13,7 +14,8 @@ f_name=[
     "padController",
     "WhacAMole",
     "LineWeatherBot",
-    "MaskMap"
+    "MaskMap",
+    "PomodoroTechnique"
 ]
 
 for(i=0;i<f_name.length;i++){
